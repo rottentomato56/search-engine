@@ -102,8 +102,8 @@ class SearchEngine(object):
 			returned_results.append((doc_vector['name'], doc_vector['location']))
 		return returned_results
 				
-	def cosine_similarity(self, query_vector, doc_vector):
-		return 
+	# def cosine_similarity(self, query_vector, doc_vector):
+		# return 
 	
 	def query_norm(self, query_vector):
 		return np.sqrt(sum(x**2 for x in query_vector.values()))
